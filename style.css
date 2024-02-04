@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@800&family=Rubik&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./image-2sarxyw0.png);
+}
+
+
+
+.main-box {
+    margin: auto;
+    transform: translateY(20%);
+    width: 45rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-box h1 {
+    margin: 2rem 0;
+    font-family: 'Gabarito', cursive;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #141414;
+}
+
+.input-box {
+    border: 2px solid #363ab8;
+    border-radius: 0.5rem;
+    width: 35rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+.input-box input {
+    padding: 0 0.6rem;
+    width: 30rem;
+    outline: none;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #424242;
+}
+
+.input-box button {
+    background-color: #363ab8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 5px;
+    font-family: 'Rubik', sans-serif;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.input-box button:hover {
+    background-color: #191D88;
+}
+
+.main-box label {
+    color: red;
+    align-self: flex-start;
+    margin-left: 6rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+::placeholder {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dictionary-result {
+    align-self: flex-start;
+    margin: 2rem 4rem;
+    width: 35rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1.not-found {
+    font-size: 41px;
+    color: rgb(255, 60, 60);
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.word h2 {
+    margin-bottom: 0.7rem;
+}
+
+.about-Word {
+    color: rgb(51 65 85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.about-Word span:last-child {
+    margin: 0 0 0 1rem;
+    color: #363ab8;
+    font-weight: 600;
+}
+
+.definition {
+    margin-top: 1rem;
+    color: rgb(30 41 59);
+    font-weight: bold;
+}
+
+.example {
+    margin: 2rem 0 0 2rem;
+    font-style: italic;
+    border-left: 3px solid #191D88;
+    padding: 0.3rem 0.5rem;
+    background-color: #ebebeb;
+}
+
+svg {
+    cursor: pointer;
+    width: 30px;
+}
+
+/* media query */
+
+@media screen and (max-width: 780px) {
+    .main-box {
+        width: 40rem;
+    }
+
+    .dictionary-result {
+        margin: 2rem 2.3rem
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .main-box {
+        width: 30rem;
+    }
+
+    .dictionary-result {
+        width: 23rem;
+        align-self: center;
+    }
+
+    .input-box {
+        width: 23rem;
+    }
+
+    .input-box input {
+        width: 17rem;
+    }
+
+    .main-box h1 {
+        margin: 1rem 0;
+    }
+
+    .example {
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main-box {
+        width: 85%;
+    }
+
+    .dictionary-result {
+        width: 80%;
+    }
+
+    .input-box {
+        width: 90%;
+    }
+
+    .input-box input {
+        width: 80%;
+    }
+
+    .main-box h1 {
+        font-size: 55px
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .main-box h1 {
+        font-size: 44px
+    }
+}
